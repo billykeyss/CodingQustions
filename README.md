@@ -1,6 +1,7 @@
 # CodingQustions
 
 Some practice coding questions I find online
+https://www.interviewcake.com/
 
 Questions to get to:
 
@@ -49,10 +50,10 @@ Questions to get to:
 - [ ] HARD: Construct a BST given the pre-order and in-order traversal Strings
 
 ## Stacks, Queues, and Heaps
-- [ ] Find the minimum element in a stack in O(1) time
+- [x] Find the minimum element in a stack in O(1) time
 - [ ] Write a function that sorts a stack (bonus: sort the stack in place without extra memory)
 - [ ] Implement a binary min heap. Turn it into a binary max heap
-- [ ] HARD: Implement a queue using 2 stacks
+- [x] HARD: Implement a queue using 2 stacks
 
 ## Linked Lists
 - [ ] Implement a linked list (with insert and delete functions)
