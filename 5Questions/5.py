@@ -7,14 +7,14 @@
 ls = [2,3,4,5,6,7,8,9]
 
 def calc(equation,list):
-    equationCalc = ''.join(str(x) for x in equation)
+    equationCalc = ''.join(str(char) for char in equation)
 
     if len(list) == 0:
         if eval(equationCalc) == 100:
             print equationCalc
     else:
-        calc(equation + ['+'] + list[0:1], list[1:])
-        calc(equation + ['-'] + list[0:1], list[1:])
-        calc(equation + list[0:1], list[1:])
+        calc(equation + ['+'] + [list[0]], list[1:])
+        calc(equation + ['-'] + [list[0]], list[1:])
+        calc(equation + [list[0]], list[1:])
 
 calc([1],ls)
