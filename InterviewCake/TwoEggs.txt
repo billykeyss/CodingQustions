@@ -1,0 +1,24 @@
+A building has 100 floors. One of the floors is the highest floor an egg can be
+dropped from without breaking.
+If an egg is dropped from above that floor, it will break. If it is dropped
+from that floor or below, it will be completely undamaged and you can drop the egg again.
+
+Given two eggs, find the highest floor an egg can be dropped from without
+breaking, with as few drops as possible.
+
+
+ANSWER:
+
+Start with the first floor, drop the egg to see if it will break. If it doesn't,
+retrieve the egg and go up 10 floors and repeat. Repeat until the egg breaks, when it does,
+you know that the highest floor the egg can be dropped without breaking is between
+10 floors ago and the current floor. Start dropping the egg one by one from the
+starting floor
+
+def recurse(item, tail=None):
+  next = item.next
+  item.next = tail
+  if next is None:
+    return item
+  else
+    return recurse(next,item)

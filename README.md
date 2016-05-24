@@ -1,11 +1,15 @@
 # CodingQustions
 
 Some practice coding questions I find online
+
+## Resources
 https://www.interviewcake.com/
+https://prowebtype.com/
+https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-1-7d4f7f0bff02#.hrdwika51
 
 Questions to get to:
 
-##General
+## General
 - [x] Find the most frequent integer in an array
 - [x] Find pairs in an integer array whose sum is equal to 10 (bonus: do it in linear time)
 - [x] Given 2 integer arrays, determine of the 2nd array is a rotated version of the 1st array. Ex. Original Array A={1,2,3,5,6,7,8} Rotated Array B={5,6,7,8,1,2,3}
@@ -51,7 +55,7 @@ Questions to get to:
 
 ## Stacks, Queues, and Heaps
 - [x] Find the minimum element in a stack in O(1) time
-- [ ] Write a function that sorts a stack (bonus: sort the stack in place without extra memory)
+- [ ] Write a function that sorts g stack (bonus: sort the stack in place without extra memory)
 - [ ] Implement a binary min heap. Turn it into a binary max heap
 - [x] HARD: Implement a queue using 2 stacks
 

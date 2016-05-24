@@ -1,0 +1,40 @@
+<!-- Fix for Interview Cake Question 18 -->
+
+<!-- Original
+<button id="btn-0">Button 1!</button>
+<button id="btn-1">Button 2!</button>
+<button id="btn-2">Button 3!</button>
+
+<script type="text/javascript">
+    var prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+    for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+        // for each of our buttons, when the user clicks it...
+        document.getElementById('btn-' + btnNum).onclick = function() {
+            // tell her what she's won!
+            alert(prizes[btnNum]);
+        };
+    }
+</script> -->
+
+<!-- Issues arises from accessing btnNum. The OnClick in the for loop does not execute
+the alert in real time. By the time the alert is being accessed, the value of btnNum
+is already 3 -->
+
+<button id="btn-0">Button 1!</button>
+<button id="btn-1">Button 2!</button>
+<button id="btn-2">Button 3!</button>
+
+<script type="text/javascript">
+  var prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+  for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+    setClick(btnNum, prizes);
+  }
+
+  function setClick(btnNum,prizes) {
+    // for each of our buttons, when the user clicks it...
+    document.getElementById('btn-' + btnNum).onclick = function() {
+        // tell her what she's won!
+        alert(prizes[btnNum]);
+    };
+  }
+</script>
