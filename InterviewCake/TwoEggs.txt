@@ -14,11 +14,3 @@ retrieve the egg and go up 10 floors and repeat. Repeat until the egg breaks, wh
 you know that the highest floor the egg can be dropped without breaking is between
 10 floors ago and the current floor. Start dropping the egg one by one from the
 starting floor
-
-def recurse(item, tail=None):
-  next = item.next
-  item.next = tail
-  if next is None:
-    return item
-  else
-    return recurse(next,item)

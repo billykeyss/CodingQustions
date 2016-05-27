@@ -5,6 +5,7 @@ Some practice coding questions I find online
 ## Resources
 https://www.interviewcake.com/
 https://prowebtype.com/
+https://github.com/donnemartin/interactive-coding-challenges
 https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-1-7d4f7f0bff02#.hrdwika51
 
 Questions to get to:
@@ -32,8 +33,9 @@ Questions to get to:
 - [ ] Reverse a String iteratively and recursively
 - [x] Determine if 2 Strings are anagrams
 - [x] Check if String is a palindrome
-- [ ] Check if a String is composed of all unique characters
+- [x] Check if a String is composed of all unique characters
 - [x] Determine if a String is an int or a double
+- [x] Determine if a string is a permutation of another string
 - [ ] HARD: Find the shortest palindrome in a String
 - [ ] HARD: Print all permutations of a String
 - [ ] HARD: Given a single-line text String and a maximum width value, write the function 'String justify(String text, int maxWidth)' that formats the input text using full-justification, i.e., extra spaces on each line are equally distributed between the words; the first word on each line is flushed left and the last word on each line is flushed right
@@ -66,7 +68,7 @@ Questions to get to:
 - [ ] Check if a linked list has cycles
 - [ ] Given a circular linked list, find the node at the beginning of the loop. Example: A-->B-->C --> D-->E -->C, C is the node that begins the loop
 - [ ] Check whether a link list is a palindrome
-- [ ] Reverse a linked list iteratively and recursively
+- [x] Reverse a linked list iteratively and recursively
 - [ ] Sorting
 - [ ] Implement bubble sort
 - [ ] Implement selection sort
