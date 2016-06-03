@@ -7,6 +7,8 @@ https://www.interviewcake.com/
 https://prowebtype.com/
 https://github.com/donnemartin/interactive-coding-challenges
 https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-1-7d4f7f0bff02#.hrdwika51
+https://github.com/parkjs814/AlgorithmVisualizer
+https://medium.com/@dancrisan/get-ready-and-think-ahead-11-tech-interview-websites-to-get-more-than-ready-5487038febcd#.bfmrg0ey6
 
 Questions to get to:
 
@@ -17,7 +19,7 @@ Questions to get to:
 - [x] Write fibbonaci iteratively and recursively (bonus: use dynamic programming)
 - [x] Find the only element in an array that only occurs once.
 - [ ] Find the common elements of 2 int arrays
-- [ ] Implement binary search of a sorted array of integers
+- [x] Implement binary search of a sorted array of integers
 - [ ] Implement binary search in a rotated array (ex. {5,6,7,8,1,2,3})
 - [ ] Use dynamic programming to find the first X prime numbers
 - [ ] Write a function that prints out the binary form of an int
