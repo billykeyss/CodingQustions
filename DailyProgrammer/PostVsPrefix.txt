@@ -1,0 +1,36 @@
+What is the difference between postfix (i++) and prefix (++i)
+
+++i will increment the value and return the incremented value
+i++ will increment the value and return the original value
+
+Node Console:
+> i=1
+1
+> j=i++
+1
+> i
+2
+> j
+1
+
+> i = 1
+1
+> j = ++i
+2
+> i
+2
+> j
+2
+
+
+i++ :
+create a temporary copy of i
+increment i
+return the temporary copy
+
+++i :
+increment i
+return i
+
+Therefore, ++i should theoretically be faster. But most modern compilers should
+optimize this and both should have the same performance.
