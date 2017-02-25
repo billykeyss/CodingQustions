@@ -1,0 +1,57 @@
+PART1
+
+Find whats wrong with the below code snippet
+
+<button id="btn-0">Button 1!</button>
+<button id="btn-1">Button 2!</button>
+<button id="btn-2">Button 3!</button>
+
+<script type="text/javascript">
+    var prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+    for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+        // for each of our buttons, when the user clicks it...
+        document.getElementById('btn-' + btnNum).onclick = function() {
+            // tell her what she's won!
+            alert(prizes[btnNum]);
+        };
+    }
+</script>
+
+prizes[btnNum] will always return undefined regardless of what button is pressed.
+This is because btnNum is passed in by reference and not by value thus by the
+end of the for loop, btnNum is equal to 3. A simple fix would be to declare the
+for loop like so:
+
+for (let btnNum = 0; btnNum < prizes.length; btnNum++) {
+
+Using let to define the variable allows us to pass in the value of the incrementing
+variable in the scope of each individual loop.
+
+PART2
+
+Find whats wrong with the below code snippet
+
+var text = 'outside';
+function logIt(){
+  console.log(text);
+  var text = 'inside';
+};
+logIt();
+
+because var text is not defined in the scope of the function, it will log undefined.
+
+Again, a simple solution:
+
+let text = 'outside';
+function logIt(){
+  console.log(text);
+  let text = 'inside';
+};
+logIt();
+
+This will log 'outside'
+
+* The difference between let and var is scoping.
+var is scoped to the nearest function block and let is scoped to the nearest
+enclosing block (both are global if outside any block), which can be smaller
+than a function block.
