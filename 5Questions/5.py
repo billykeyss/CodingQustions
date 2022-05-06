@@ -11,7 +11,7 @@ def calc(equation,list):
 
     if len(list) == 0:
         if eval(equationCalc) == 100:
-            print equationCalc
+            print(equationCalc)
     else:
         calc(equation + ['+'] + [list[0]], list[1:])
         calc(equation + ['-'] + [list[0]], list[1:])
